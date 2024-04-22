@@ -1,0 +1,15 @@
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\bin\Debug\net8.0\LabaForSanya.exe
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\bin\Debug\net8.0\LabaForSanya.deps.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\bin\Debug\net8.0\LabaForSanya.runtimeconfig.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\bin\Debug\net8.0\LabaForSanya.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\bin\Debug\net8.0\LabaForSanya.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\obj\Debug\net8.0\LabaForSanya.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\obj\Debug\net8.0\LabaForSanya.AssemblyInfoInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\obj\Debug\net8.0\LabaForSanya.AssemblyInfo.cs
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\obj\Debug\net8.0\LabaForSanya.csproj.CoreCompileInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\obj\Debug\net8.0\LabaForSanya.sourcelink.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\obj\Debug\net8.0\LabaForSanya.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\obj\Debug\net8.0\refint\LabaForSanya.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\obj\Debug\net8.0\LabaForSanya.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\obj\Debug\net8.0\LabaForSanya.genruntimeconfig.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LabaForSanya\obj\Debug\net8.0\ref\LabaForSanya.dll
