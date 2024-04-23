@@ -41,8 +41,18 @@
         }
         public static string GetInput(string message)
         {
-            Console.WriteLine(message);
-            return Console.ReadLine();
+            string inputUser;
+            bool check_string = false;
+            do
+            {//Проверка валидности лишней никогда не бывает =))
+                Console.WriteLine(message);
+                inputUser = Console.ReadLine() ?? string.Empty;
+                if(inputUser != null && inputUser.GetType() == typeof(string))
+                {
+                    check_string = true;
+                }
+            } while (check_string == false);
+            return inputUser ?? string.Empty;
         }
 
         public static void WaitingForClick(string message)
@@ -83,7 +93,7 @@
             do
             {
                 Console.WriteLine(message);
-                string input = Console.ReadLine();
+                string input = Console.ReadLine() ?? string.Empty;
 
                 isValidInput = int.TryParse(input, out userInput);
 
@@ -103,7 +113,7 @@
             do
             {
                 Console.WriteLine(message);
-                string input = Console.ReadLine();
+                string input = Console.ReadLine() ?? string.Empty;
 
                 isValidInput = int.TryParse(input, out userInput);
 

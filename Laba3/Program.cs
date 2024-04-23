@@ -25,9 +25,9 @@ namespace Laba3
                 switch (choice)
                 {
                     case 1:
-                            products.Add( Product.AddProduct());
-                            Product.IncreaseProductCount();
-                            Console.WriteLine("Продукт успешно добавлен");
+                        products.Add(Product.AddProduct());
+                        Product.IncreaseProductCount();
+                        Console.WriteLine("Продукт успешно добавлен");
                         break;
                     case 2:
                         if (Product.CounterProduct > 0)

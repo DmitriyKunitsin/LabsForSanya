@@ -33,11 +33,11 @@ namespace Laba3
 
         public virtual double GetDiscountPrice(double discountPercentage)// Виртуальный метод для реализации полиформизма
         {// в него передается процент скидки
-            if(discountPercentage < 0)
+            if (discountPercentage < 0)
             {
                 discountPercentage = 0;
             }
-            return Price - (Price * (discountPercentage / 100)); 
+            return Price - (Price * (discountPercentage / 100));
         }
 
         public string Name { get => _name; set => _name = value; }
@@ -61,7 +61,7 @@ namespace Laba3
         /*Функция для увеличения счетчика продуктуктов*/
         public static void IncreaseProductCount()
         {
-                CounterProduct++;
+            CounterProduct++;
         }
 
         /*Функция для уменьшения счетчика продуктуктов*/
@@ -180,7 +180,7 @@ namespace Laba3
                         {
                             continue;
                         }
-                            IsNullAllProdOrNo = true;
+                        IsNullAllProdOrNo = true;
                         if (AllProducts[i].Name.ToLower() == name_search)
                         {
                             PrintCurrentProduct(AllProducts[i]);
@@ -201,7 +201,7 @@ namespace Laba3
                         {
                             continue;
                         }
-                            IsNullAllProdOrNo = true;
+                        IsNullAllProdOrNo = true;
                         if (AllProducts[i].Description.ToLower().Contains(dist_search.ToLower()))
                         {
                             PrintCurrentProduct(AllProducts[i]);
@@ -222,7 +222,7 @@ namespace Laba3
                         {
                             continue;
                         }
-                            IsNullAllProdOrNo = true;
+                        IsNullAllProdOrNo = true;
                         if (AllProducts[i].Price == price_search)
                         {
                             PrintCurrentProduct(AllProducts[i]);
@@ -243,7 +243,7 @@ namespace Laba3
                         {
                             continue;
                         }
-                            IsNullAllProdOrNo = true;
+                        IsNullAllProdOrNo = true;
                         if (AllProducts[i].Quantity == quantity_search)
                         {
                             PrintCurrentProduct(AllProducts[i]);
@@ -264,7 +264,7 @@ namespace Laba3
                         {
                             continue;
                         }
-                            IsNullAllProdOrNo = true;
+                        IsNullAllProdOrNo = true;
                         for (int k = 0; k < AllProducts[i]._structure.Length; ++k)
                         {
 
@@ -282,7 +282,7 @@ namespace Laba3
                     break;
 
             }
-            if(IsNullAllProdOrNo == false)
+            if (IsNullAllProdOrNo == false)
             {
                 Console.WriteLine("Полки пусты");
             }
@@ -335,12 +335,7 @@ namespace Laba3
         {
             string current_name_product = Print.GetInput("Введите название продукта для его изменения");
 
-            Product productToRemove = allProducts.FirstOrDefault(x => x.Name.ToLower() == current_name_product.ToLower());
-            if (productToRemove != null)
-            {
-                return productToRemove;
-            }
-            return null;
+            return allProducts.FirstOrDefault(x => x.Name.ToLower() == current_name_product.ToLower()); 
         }
     }
 }
