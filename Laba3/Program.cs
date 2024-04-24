@@ -1,11 +1,4 @@
-﻿//Product product1 = new Product("Магазин 1", "Продукт 1", "Описание продукта 1", 10.0, 20, 5);
-//Product product2 = new Product("Магазин 2", "Продукт 2", "Описание продукта 2", 15.0, 30, 3);
-//Product product3 = new Product("Магазин 3", "Продукт 3", "Описание продукта 3", 20.0, 25, 4);
-
-//Product.AddStructProduct(product1, new string[] { "Ингредиент 1", "Ингредиент 2", "Ингредиент 3", "Ингредиент 4", "Ингредиент 5" });
-//Product.AddStructProduct(product2, new string[] { "Ингредиент A", "Ингредиент B", "Ингредиент C" });
-//Product.AddStructProduct(product3, new string[] { "Ингредиент X", "Ингредиент Y", "Ингредиент Z", "Ингредиент W" });
-namespace Laba3
+﻿namespace Laba3
 {
     internal class Program
     {
@@ -15,7 +8,6 @@ namespace Laba3
             Product.DiscountAmount = Print.GetIntInput("Введите сегодняшнию сумму скидки на все товары");
             List<Product> products = new List<Product>();
             string input_check = string.Empty;
-            Departament selectedDepartamentd;
             while (input_check != "exit")
             {
 
@@ -35,7 +27,9 @@ namespace Laba3
                     case 2:
                         if (Product.CounterProduct > 0)
                         {
-                            Product.RemoveProduct(products);
+                            Console.WriteLine("В каком отделе произвести поиск?");
+                            selectedProductDepartamentd = Product.GetProductBySelectedDepartament(products);
+                            Product.RemoveProduct(selectedProductDepartamentd);
                             Console.WriteLine("Продукт успешно удален");
                             Product.DecreaseProductCount();
                         }

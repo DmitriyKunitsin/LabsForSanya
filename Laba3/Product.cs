@@ -47,6 +47,12 @@ namespace Laba3
 
         public int Quantity { get => _quantity; set => _quantity = value; }
 
+        /// <summary>Gets or sets the <see cref="System.String" /> at the specified index.</summary>
+        /// <param name="index">The index.</param>
+        /// <value>The <see cref="System.String" />.</value>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public string this[int index]
         {
             get { return _structure[index]; }
@@ -59,13 +65,15 @@ namespace Laba3
         public static int MaxProduct = 0;
         public static int DiscountAmount = 0;
 
-        /*Функция для увеличения счетчика продуктуктов*/
+
+        /// <summary>Функция для увеличения счетчика продуктуктов</summary>
         public static void IncreaseProductCount()
         {
             CounterProduct++;
         }
 
-        /*Функция для уменьшения счетчика продуктуктов*/
+
+        /// <summary>Функция для уменьшения счетчика продуктуктов</summary>
         public static void DecreaseProductCount()
         {
             if (CounterProduct <= 0)
@@ -75,6 +83,10 @@ namespace Laba3
             else { CounterProduct--; }
         }
 
+        /// <summary>Добавляет свойства продукта в созданный продукт.</summary>
+        /// <param name="product">The product.</param>
+        /// <param name="values">The values.</param>
+        /// <exception cref="System.Exception">Размер переданного массива не соответствует размеру массива структуры.</exception>
         public static void AddStructProduct(Product product, string[] values)
         {
             if (values.Length == product._structure.Length)
@@ -89,6 +101,10 @@ namespace Laba3
                 throw new Exception("Размер переданного массива не соответствует размеру массива структуры.");
             }
         }
+        /// <summary>В форме диалога заполняются данные продукта и возвращает гготовый объект</summary>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public static Product AddProduct()
         {
             string name_prod = Print.GetInput("Введите название продукта");
@@ -108,6 +124,10 @@ namespace Laba3
             return current_product;
         }
 
+        /// <summary>
+        /// В форме диалога ожидает ввода названия продукта для поиска по всем продуктам, в случае успеха удалет продукт и обновляет счетчик, в случае неудачи, выводит информацию, что такого продукта не найдено
+        /// </summary>
+        /// <param name="allProducts">All products.</param>
         public static void RemoveProduct(List<Product> allProducts)
         {
             string search_product_for_remove = Print.GetInput("Введите название продукта, который необходимо удалить");
@@ -117,7 +137,22 @@ namespace Laba3
             if (productToRemove != null)
             {
                 Console.WriteLine($"Товар из отдела {Print.GetDepartamentByProduct(productToRemove)}");
+
+                switch (Print.GetDepartamentByProduct(productToRemove))
+                {
+                    case "Electronics":
+                        Electronics.Counter--;
+                        break;
+                    case "Clothing":
+                        Clothing.Counter--;
+                        break;
+                    case "Toy":
+                        Toy.Counter--;
+                        break;
+                }
+
                 allProducts.Remove(productToRemove);
+
 
             }
             else
@@ -126,6 +161,8 @@ namespace Laba3
             }
         }
 
+        /// <summary>Печатает информацию о конкретном продукте</summary>
+        /// <param name="currentProduct">The current product.</param>
         public static void PrintCurrentProduct(Product currentProduct)
         {
             if (currentProduct != null)
@@ -149,6 +186,8 @@ namespace Laba3
             }
         }
 
+        /// <summary>Выводит информацию о всех созданных продуктах</summary>
+        /// <param name="allProducts">All products.</param>
         public static void PrintAllProduct(List<Product> allProducts)
         {
             int count = 1;
@@ -171,6 +210,9 @@ namespace Laba3
             }
         }
 
+        /// <summary>В форме диалога происходит выбор по какому критерию искать и выводит информацию.</summary>
+        /// <param name="AllProducts">All products.</param>
+        /// <param name="selected">The selected.</param>
         public static void SearchLinesInSelectedProduct(List<Product> AllProducts, int selected)
         {
             bool IsNullAllProdOrNo = false;
@@ -293,6 +335,9 @@ namespace Laba3
             }
         }
 
+        /// <summary>Обновляет выбранный продукт и определнное его поле</summary>
+        /// <param name="currentProduct">The current product.</param>
+        /// <param name="selected">The selected.</param>
         public static void UpdateCurrentProduct(Product currentProduct, int selected)
         {
             switch (selected)
@@ -318,31 +363,31 @@ namespace Laba3
             }
         }
 
-        public static bool CheckArrayIsNotNull(Product[] product)
-        {
-            bool check = false;
-            for (int i = 0; i < product.Length; ++i)
-            {
-                if (product[i] == null)
-                {
-                    check = true;
-                }
-            }
-            return check;
-        }
-
+        /// <summary>Меняет размер массива внутри объекта, в случае изменения состава продукта</summary>
+        /// <param name="currentProduct">The current product.</param>
+        /// <param name="newSize">The new size.</param>
         private static void ResizeArrayProduct(ref Product currentProduct, int newSize)
         {
             currentProduct._structure = new string[newSize];
         }
 
+        /// <summary>В форме диалога получает название продукта и возвращает конкретный объект</summary>
+        /// <param name="allProducts">All products.</param>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public static Product SearchSelectedProduct(List<Product> allProducts)
         {
             string current_name_product = Print.GetInput("Введите название продукта для его изменения");
 
-            return allProducts.FirstOrDefault(x => x.Name.ToLower() == current_name_product.ToLower()); 
+            return allProducts.FirstOrDefault(x => x.Name.ToLower() == current_name_product.ToLower());
         }
 
+        /// <summary>Возвращает List с выбранными отделами</summary>
+        /// <param name="products">The products.</param>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public static List<Product> GetProductBySelectedDepartament(List<Product> products)
         {
             Departament selectedDepartamentd = (Departament)Print.PrintMenuDepartament();

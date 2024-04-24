@@ -5,6 +5,10 @@ namespace Laba3
 {
     internal class Print
     {
+        /// <summary>Печатает меню выбора отдела и ожидает ввод от 1 до 3, в случае неудачи повторяет запрос, возвращает номер выбранного отдела</summary>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public static int PrintMenuDepartament()
         {
             Console.WriteLine("1. Отдел электроники");
@@ -23,6 +27,8 @@ namespace Laba3
             } while (isValidValue == false);
             return choice;
         }
+        /// <summary> Принимает строку с названием магазина и выводи меню для управления</summary>
+        /// <param name="name_shop">The name shop.</param>
         public static void PrintMenu(string name_shop)
         {
             Console.WriteLine($"Магазин : " + name_shop);
@@ -36,6 +42,11 @@ namespace Laba3
             Console.WriteLine("7. Выход");
         }
 
+        /// <summary>Получается объект, получает его отдел и в зависимости от отдела, возвращает строку с названием отдела</summary>
+        /// <param name="currentProduct">The current product.</param>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public static string GetDepartamentByProduct(Product currentProduct)
         {
             int checkNumberDepartament = (int)currentProduct.Departament;
@@ -55,6 +66,8 @@ namespace Laba3
             return currentDepartamnet;
         }
 
+        /// <summary>В форме диалога опрашивает в какой отдел добавить продукт и запускает диалог для создания</summary>
+        /// <param name="products">The products.</param>
         public static void CreatedSelectedProduct(List<Product> products)
         {
             Console.WriteLine("В какой отдел добавить продукт?");
@@ -72,6 +85,11 @@ namespace Laba3
                     break;
             }
         }
+        /// <summary>Производит нужный опрос и ожидает ответ да или нет, если да, то true, иначе false</summary>
+        /// <param name="message">The message.</param>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public static bool SurveyIsBoolean(string message)
         {
             bool result = false;
@@ -90,6 +108,11 @@ namespace Laba3
             } while (answer.ToLower() != "да" && answer.ToLower() != "нет");
             return result;
         }
+        /// <summary>Получает сообщение, которое необходимо вывести и ждет ввода именно строки, проверяет на валидность данных, в случае не валидности повторяет запрос</summary>
+        /// <param name="message">The message.</param>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public static string GetInput(string message)
         {
             string inputUser;
@@ -101,11 +124,17 @@ namespace Laba3
             return inputUser;
         }
 
+        /// <summary>Получает строку для вывода и ожидает нажатия клавиши</summary>
+        /// <param name="message">The message.</param>
         public static void WaitingForClick(string message)
         {
             Console.WriteLine(message);
             Console.ReadKey(true);// параметр true скрывает вводимые символы
         }
+        /// <summary>Печатает меню для выбора параметра в котором необходимо производить поиск, возвращает номер меню</summary>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public static int PrintMenuForSearch()
         {
             int selected = 0;
@@ -119,14 +148,19 @@ namespace Laba3
             return selected;
 
         }
+        /// <summary>Выводи колличество продуктов в магазине и в каждом отделе</summary>
         public static void PrintCountAllDepartamentProduct()
         {
             Console.WriteLine($"Всего продуктов в магазине {Product.CounterProduct}");
             Console.WriteLine($"В отделе электроники {Electronics.Counter}");
             Console.WriteLine($"В отделе вещей {Clothing.Counter}");
             Console.WriteLine($"В отделе игрушек {Toy.Counter}");
-            
+
         }
+        /// <summary>Печатает меню выбора поля, по которому необходимо производить поиск</summary>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public static int PrintMenuForSelectedUpdateProduct()
         {
             int selected = 0;
@@ -137,8 +171,12 @@ namespace Laba3
             Console.WriteLine("4. Состав");
             selected = GetIntInput("");
             return selected;
-
         }
+        /// <summary>Получает строку с сообщением и ожидает ввода строки, конвертирует ее в double и возвращает, в случае неудачи повторяет запрос на ввод именно double</summary>
+        /// <param name="message">The message.</param>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public static double GetDoubleInput(string message)
         {
             bool isValidInput = false;
@@ -158,7 +196,11 @@ namespace Laba3
             } while (!isValidInput);
             return userInput;
         }
-
+        /// <summary>Получает строку с сообщением и ожидает ввода строки, конвертирует ее в int и возвращает, в случае неудачи повторяет запрос на ввод именно int</summary>
+        /// <param name="message">The message.</param>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public static int GetIntInput(string message)
         {
             bool isValidInput = false;

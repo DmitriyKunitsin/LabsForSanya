@@ -17,6 +17,11 @@ namespace Laba3
             Counter++;
         }
 
+        /// <summary>Расчет скидки в зависимости от условия внутри конкретного объекта, получается процент скидки, возвращает цену со скидкой</summary>
+        /// <param name="discountPercentage">The discount percentage.</param>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public override double GetDiscountPrice(double discountPercentage)
         {
             if (_gender == "муж")
