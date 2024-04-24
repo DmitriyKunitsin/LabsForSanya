@@ -13,3 +13,6 @@ C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Laba3\obj\Debug
 C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Laba3\obj\Debug\net8.0\Laba3.pdb
 C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Laba3\obj\Debug\net8.0\Laba3.genruntimeconfig.cache
 C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Laba3\obj\Debug\net8.0\ref\Laba3.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Laba3\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Laba3\obj\Debug\net8.0\Laba3.csproj.AssemblyReference.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Laba3\obj\Debug\net8.0\Laba3.csproj.Up2Date

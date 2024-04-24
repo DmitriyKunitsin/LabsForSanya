@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "clkGEjmO36i8k2ttuSib1Lwmvoi/6Ax624Wow/SZ4SBj5DxwI/ZZSuDXULqJlw2xazqJVvsIawiV8F1r8ExRgQ==",
+  "dgSpecHash": "hiNJOuZJw7ssJmZXVRpXR0xCchC+2g54oUp4nipNkeYS3W9u9CV93ietU5wG4EZ6fT/ERkDIMJZxnMtFzOUTbg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ap_lo\\OneDrive\\Рабочий стол\\СаняЛабы\\Laba3\\Laba3.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ap_lo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

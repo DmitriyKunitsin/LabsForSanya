@@ -1,4 +1,6 @@
-﻿using System.Xml.Linq;
+﻿using Newtonsoft.Json;
+using System.Net.Http.Json;
+using System.Xml.Linq;
 
 namespace Laba3
 {
@@ -83,6 +85,37 @@ namespace Laba3
             else { CounterProduct--; }
         }
 
+        /// <summary>Записать данные List в файл</summary>
+        /// <param name="products">The products.</param>
+        public static void SerializeInFile(List<Product> products)
+        {
+            string json = JsonConvert.SerializeObject(products);
+            File.WriteAllText("SaveProductForSupermarket.json", json);
+        }
+
+        /// <summary>Получить данные файла с момента последнего запуска программы</summary>
+        /// <param name="oldProducts">The old products.</param>
+        public static void DeserializedWithFile(List<Product> oldProducts)
+        {
+            string fileName = "SaveProductForSupermarket.json";
+            if (File.Exists(fileName))// Если файл создан
+            {
+                string jsonFromFile = File.ReadAllText("SaveProductForSupermarket.json");
+                List<Product> ReadProducts = JsonConvert.DeserializeObject<List<Product>>(jsonFromFile);
+                if (ReadProducts != null)
+                {
+                    foreach (Product prod in ReadProducts)
+                    {
+                        oldProducts.Add(prod);
+                    }
+                }
+            }
+            else// Если файла нету, то создадим его (первый запуск)
+            {
+                File.Create(fileName).Close();//Создаю файл
+                Program.InitilizetedObject(oldProducts);// Создаю дефолтные продукты в маркете
+            }
+        }
         /// <summary>Добавляет свойства продукта в созданный продукт.</summary>
         /// <param name="product">The product.</param>
         /// <param name="values">The values.</param>
@@ -393,6 +426,16 @@ namespace Laba3
             Departament selectedDepartamentd = (Departament)Print.PrintMenuDepartament();
 
             return products.Where(x => x.Departament == selectedDepartamentd).ToList();
+        }
+
+        /// <summary>Обновляет показания счетчиков, после получения данных из файла</summary>
+        /// <param name="products">The products.</param>
+        public static void GetCountForAllDepartamnet(List<Product> products)
+        {
+            CounterProduct = products.Count;
+            Electronics.Counter = products.Where(x => x.Departament == (Departament)1).Count();
+            Clothing.Counter = products.Where(x => x.Departament == (Departament)2).Count();
+            Toy.Counter = products.Where(x => x.Departament == (Departament)3).Count();
         }
     }
 }
