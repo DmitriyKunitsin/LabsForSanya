@@ -26,14 +26,14 @@ namespace Laba3
         public static void PrintMenu(string name_shop)
         {
             Console.WriteLine($"Магазин : " + name_shop);
+            Console.WriteLine($"Скидка дня : {Product.DiscountAmount}%");
             Console.WriteLine("\n\n1. Добавить продукт");
             Console.WriteLine("2. удалить продукт");
             Console.WriteLine("3. Изменить объект");
             Console.WriteLine("4. Поиск объектов по полю");
             Console.WriteLine("5. Показать все продукты");
             Console.WriteLine("6. Показать информацию об одном объекте");
-            Console.WriteLine("7. Показать все отделы");
-            Console.WriteLine("8. Выход");
+            Console.WriteLine("7. Выход");
         }
 
         public static string GetDepartamentByProduct(Product currentProduct)
@@ -42,13 +42,13 @@ namespace Laba3
             string currentDepartamnet = "";
             switch (checkNumberDepartament)
             {
-                case 0:
+                case 1:
                     currentDepartamnet = "Electronics";
                     break;
-                case 1:
+                case 2:
                     currentDepartamnet = "Clothing";
                     break;
-                case 2:
+                case 3:
                     currentDepartamnet = "Toy";
                     break;
             }
@@ -58,8 +58,8 @@ namespace Laba3
         public static void CreatedSelectedProduct(List<Product> products)
         {
             Console.WriteLine("В какой отдел добавить продукт?");
-            int testSelected = Print.PrintMenuDepartament();
-            switch (testSelected)
+            int selectedDepartambet = Print.PrintMenuDepartament();
+            switch (selectedDepartambet)
             {
                 case 1:
                     products.Add(Electronics.AddElectronics());
@@ -93,17 +93,12 @@ namespace Laba3
         public static string GetInput(string message)
         {
             string inputUser;
-            bool check_string = false;
             do
             {//Проверка валидности лишней никогда не бывает =))
                 Console.WriteLine(message);
                 inputUser = Console.ReadLine() ?? string.Empty;
-                if (inputUser != null && inputUser.GetType() == typeof(string))
-                {
-                    check_string = true;
-                }
-            } while (check_string == false);
-            return inputUser ?? string.Empty;
+            } while (string.IsNullOrWhiteSpace(inputUser));
+            return inputUser;
         }
 
         public static void WaitingForClick(string message)

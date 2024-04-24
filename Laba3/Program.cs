@@ -24,6 +24,7 @@ namespace Laba3
                 Print.PrintMenu(name_shop);
                 int choice = Print.GetIntInput("Выберите пункт меню");
                 Product curentProduct;
+                List<Product> selectedProductDepartamentd;
                 switch (choice)
                 {
                     case 1:
@@ -40,6 +41,8 @@ namespace Laba3
                         }
                         break;
                     case 3:
+                        Console.WriteLine("В каком отделе произвести поиск?");
+                        selectedProductDepartamentd = Product.GetProductBySelectedDepartament(products);
                         curentProduct = Product.SearchSelectedProduct(products);
                         if (curentProduct != null)
                         {
@@ -58,7 +61,9 @@ namespace Laba3
                         Product.PrintAllProduct(products);
                         break;
                     case 6:
-                        curentProduct = Product.SearchSelectedProduct(products);
+                        Console.WriteLine("В каком отделе произвести поиск?");
+                        selectedProductDepartamentd = Product.GetProductBySelectedDepartament(products);
+                        curentProduct = Product.SearchSelectedProduct(selectedProductDepartamentd);
                         if (curentProduct != null)
                         {
                             Product.PrintCurrentProduct(curentProduct);
@@ -69,10 +74,6 @@ namespace Laba3
                         }
                         break;
                     case 7:
-                        List<Product> selectedProductDepartamentd = Product.GetProductBySelectedDepartament(products);
-                        //products[Product.CounterProduct] = Toy.AddToy();
-                        break;
-                    case 8:
                         input_check = "exit";
                         break;
                     default:

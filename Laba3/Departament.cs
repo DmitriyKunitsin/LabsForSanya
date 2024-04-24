@@ -2,7 +2,7 @@
 {
     public enum Departament
     {
-        Electronics,
+        Electronics = 1,
         Clothing,
         Toy
     }

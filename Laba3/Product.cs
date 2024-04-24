@@ -130,6 +130,7 @@ namespace Laba3
         {
             if (currentProduct != null)
             {
+                Console.WriteLine($"Отдел : {Print.GetDepartamentByProduct(currentProduct)}");
                 Console.WriteLine($"Название : " + currentProduct.Name);
                 Console.WriteLine($"Описание : " + currentProduct.Description);
                 Console.WriteLine($"Цена : " + currentProduct.Price);
