@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System.Net.Http.Json;
+using Newtonsoft.Json.Linq;
 using System.Xml.Linq;
 
 namespace Laba3
@@ -10,7 +10,7 @@ namespace Laba3
         private string _description;// описание продукта
         private double _price;// цена продукта
         private int _quantity;// колличество продуктов
-        private string[] _structure;// состав продукта
+        public string[] _structure;// состав продукта
         private int _lenght_structure; //Максильное колличество продуктов на полках
         public Departament Departament { get; set; }
 
@@ -67,6 +67,18 @@ namespace Laba3
         public static int MaxProduct = 0;
         public static int DiscountAmount = 0;
 
+        [JsonProperty("Manufactures")]
+        public string Manufactures { get; set; }
+        [JsonProperty("Gender")]
+        public string Gender { get; set; }
+        [JsonProperty("IsBatteryPowered")]
+        public bool IsBatteryPowered { get; set; }
+        [JsonProperty("AgeRestrictions")]
+        public int AgeRestrictions { get; set; }
+
+
+
+
 
         /// <summary>Функция для увеличения счетчика продуктуктов</summary>
         public static void IncreaseProductCount()
@@ -89,7 +101,7 @@ namespace Laba3
         /// <param name="products">The products.</param>
         public static void SerializeInFile(List<Product> products)
         {
-            string json = JsonConvert.SerializeObject(products);
+            string json = JsonConvert.SerializeObject(products, Formatting.Indented);
             File.WriteAllText("SaveProductForSupermarket.json", json);
         }
 
@@ -102,18 +114,48 @@ namespace Laba3
             {
                 string jsonFromFile = File.ReadAllText("SaveProductForSupermarket.json");
                 List<Product> ReadProducts = JsonConvert.DeserializeObject<List<Product>>(jsonFromFile);
+
                 if (ReadProducts != null)
                 {
                     foreach (Product prod in ReadProducts)
                     {
-                        oldProducts.Add(prod);
+                        if (prod.Departament == Departament.Electronics)
+                        {
+                            Electronics deserialElectronics = new Electronics(prod.Name, prod.Description, prod.Price, prod.Quantity, prod._structure.Length, prod.Manufactures, prod.IsBatteryPowered);
+                            for (int i = 0; i < prod._structure.Length; ++i)
+                            {
+                                deserialElectronics[i] = prod._structure[i];
+                            }
+                            oldProducts.Add(deserialElectronics);
+
+                        }
+                        else if (prod.Departament == Departament.Clothing)
+                        {
+                            Clothing deserialClotch = new Clothing(prod.Name, prod.Description, prod.Price, prod.Quantity, prod._structure.Length, prod.Manufactures, prod.Gender);
+                            for (int i = 0; i < prod._structure.Length; i++)
+                            {
+                                deserialClotch[i] = prod._structure[i];
+                            }
+                            oldProducts.Add(deserialClotch);
+
+                        }
+                        else if (prod.Departament == Departament.Toy)
+                        {
+                            Toy deserialToy = new Toy(prod.Name, prod.Description, prod.Price, prod.Quantity, prod._structure.Length, prod.AgeRestrictions, prod.Manufactures, prod.IsBatteryPowered);
+                            for (int i = 0; i < prod._structure.Length; ++i)
+                            {
+                                deserialToy[i] = prod._structure[i];
+                            }
+                            oldProducts.Add(deserialToy);
+                        }
+
                     }
                 }
             }
             else// Если файла нету, то создадим его (первый запуск)
             {
                 File.Create(fileName).Close();//Создаю файл
-                Program.InitilizetedObject(oldProducts);// Создаю дефолтные продукты в маркете
+                //Program.InitilizetedObject(oldProducts);// Создаю дефолтные продукты в маркете
             }
         }
         /// <summary>Добавляет свойства продукта в созданный продукт.</summary>

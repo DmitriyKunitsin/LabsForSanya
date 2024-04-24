@@ -33,7 +33,7 @@
             return base.GetDiscountPrice(discountPercentage);
         }
 
-        public static Product AddElectronics()
+        public static Electronics AddElectronics()
         {
             Product newProduct = AddProduct();
             string manufactures = Print.GetInput("введите страну производителя");
