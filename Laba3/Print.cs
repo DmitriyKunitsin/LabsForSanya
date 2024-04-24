@@ -1,13 +1,27 @@
-﻿namespace Laba3
+﻿using System.Diagnostics;
+using System.Security;
+
+namespace Laba3
 {
     internal class Print
     {
-        public static void PrintMenuDepartament()
+        public static int PrintMenuDepartament()
         {
             Console.WriteLine("1. Отдел электроники");
             Console.WriteLine("2. Отдел вещей");
             Console.WriteLine("3. Отдел игрушек");
-            Console.WriteLine("4. Вернуться назад");
+            int choice;
+            bool isValidValue = false;
+            do
+            {
+                choice = Print.GetIntInput("Выберите отдел магазина");
+                if (choice > 0 && choice <= 3)
+                {
+                    isValidValue = true;
+                }
+
+            } while (isValidValue == false);
+            return choice;
         }
         public static void PrintMenu(string name_shop)
         {
@@ -18,9 +32,46 @@
             Console.WriteLine("4. Поиск объектов по полю");
             Console.WriteLine("5. Показать все продукты");
             Console.WriteLine("6. Показать информацию об одном объекте");
-            Console.WriteLine("7. Выход");
+            Console.WriteLine("7. Показать все отделы");
+            Console.WriteLine("8. Выход");
         }
 
+        public static string GetDepartamentByProduct(Product currentProduct)
+        {
+            int checkNumberDepartament = (int)currentProduct.Departament;
+            string currentDepartamnet = "";
+            switch (checkNumberDepartament)
+            {
+                case 0:
+                    currentDepartamnet = "Electronics";
+                    break;
+                case 1:
+                    currentDepartamnet = "Clothing";
+                    break;
+                case 2:
+                    currentDepartamnet = "Toy";
+                    break;
+            }
+            return currentDepartamnet;
+        }
+
+        public static void CreatedSelectedProduct(List<Product> products)
+        {
+            Console.WriteLine("В какой отдел добавить продукт?");
+            int testSelected = Print.PrintMenuDepartament();
+            switch (testSelected)
+            {
+                case 1:
+                    products.Add(Electronics.AddElectronics());
+                    break;
+                case 2:
+                    products.Add(Clothing.AddClothing());
+                    break;
+                case 3:
+                    products.Add(Toy.AddToy());
+                    break;
+            }
+        }
         public static bool SurveyIsBoolean(string message)
         {
             bool result = false;
@@ -47,7 +98,7 @@
             {//Проверка валидности лишней никогда не бывает =))
                 Console.WriteLine(message);
                 inputUser = Console.ReadLine() ?? string.Empty;
-                if(inputUser != null && inputUser.GetType() == typeof(string))
+                if (inputUser != null && inputUser.GetType() == typeof(string))
                 {
                     check_string = true;
                 }
@@ -72,6 +123,14 @@
             selected = GetIntInput("");
             return selected;
 
+        }
+        public static void PrintCountAllDepartamentProduct()
+        {
+            Console.WriteLine($"Всего продуктов в магазине {Product.CounterProduct}");
+            Console.WriteLine($"В отделе электроники {Electronics.Counter}");
+            Console.WriteLine($"В отделе вещей {Clothing.Counter}");
+            Console.WriteLine($"В отделе игрушек {Toy.Counter}");
+            
         }
         public static int PrintMenuForSelectedUpdateProduct()
         {

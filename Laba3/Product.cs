@@ -57,6 +57,7 @@ namespace Laba3
 
         public static int CounterProduct = 0;
         public static int MaxProduct = 0;
+        public static int DiscountAmount = 0;
 
         /*Функция для увеличения счетчика продуктуктов*/
         public static void IncreaseProductCount()
@@ -115,6 +116,7 @@ namespace Laba3
 
             if (productToRemove != null)
             {
+                Console.WriteLine($"Товар из отдела {Print.GetDepartamentByProduct(productToRemove)}");
                 allProducts.Remove(productToRemove);
 
             }
@@ -131,6 +133,7 @@ namespace Laba3
                 Console.WriteLine($"Название : " + currentProduct.Name);
                 Console.WriteLine($"Описание : " + currentProduct.Description);
                 Console.WriteLine($"Цена : " + currentProduct.Price);
+                Console.WriteLine($"Цена со скидкой :" + currentProduct.GetDiscountPrice(DiscountAmount));
                 Console.WriteLine($"Колличество на остатке : " + currentProduct.Quantity);
                 Console.WriteLine("Состав : ");
                 for (int i = 0; i < currentProduct._structure.Length; ++i)
@@ -156,6 +159,7 @@ namespace Laba3
                     {
                         continue;
                     }
+                    Console.WriteLine($"Отдел : {Print.GetDepartamentByProduct(product)}");
                     Console.WriteLine($"Продукт #{count++} : ");
                     Console.WriteLine($"Название : " + product.Name);
                 }
@@ -336,6 +340,13 @@ namespace Laba3
             string current_name_product = Print.GetInput("Введите название продукта для его изменения");
 
             return allProducts.FirstOrDefault(x => x.Name.ToLower() == current_name_product.ToLower()); 
+        }
+
+        public static List<Product> GetProductBySelectedDepartament(List<Product> products)
+        {
+            Departament selectedDepartamentd = (Departament)Print.PrintMenuDepartament();
+
+            return products.Where(x => x.Departament == selectedDepartamentd).ToList();
         }
     }
 }

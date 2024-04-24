@@ -12,20 +12,22 @@ namespace Laba3
         static void Main(string[] args)
         {
             string name_shop = Print.GetInput("Введите название вашего магазина");
+            Product.DiscountAmount = Print.GetIntInput("Введите сегодняшнию сумму скидки на все товары");
             List<Product> products = new List<Product>();
-
             string input_check = string.Empty;
+            Departament selectedDepartamentd;
             while (input_check != "exit")
             {
+
                 Console.Clear();
-                Console.WriteLine($"Всего продуктов в магазине {Product.CounterProduct}");
+                Print.PrintCountAllDepartamentProduct();
                 Print.PrintMenu(name_shop);
                 int choice = Print.GetIntInput("Выберите пункт меню");
                 Product curentProduct;
                 switch (choice)
                 {
                     case 1:
-                        products.Add(Product.AddProduct());
+                        Print.CreatedSelectedProduct(products);
                         Product.IncreaseProductCount();
                         Console.WriteLine("Продукт успешно добавлен");
                         break;
@@ -41,6 +43,7 @@ namespace Laba3
                         curentProduct = Product.SearchSelectedProduct(products);
                         if (curentProduct != null)
                         {
+                            Console.WriteLine($"Товар из отдела {Print.GetDepartamentByProduct(curentProduct)}");
                             Product.UpdateCurrentProduct(curentProduct, Print.PrintMenuForSelectedUpdateProduct());
                         }
                         else
@@ -66,10 +69,11 @@ namespace Laba3
                         }
                         break;
                     case 7:
-                        input_check = "exit";
+                        List<Product> selectedProductDepartamentd = Product.GetProductBySelectedDepartament(products);
+                        //products[Product.CounterProduct] = Toy.AddToy();
                         break;
                     case 8:
-                        products[Product.CounterProduct] = Toy.AddToy();
+                        input_check = "exit";
                         break;
                     default:
                         Console.WriteLine("неверный пункт меню");

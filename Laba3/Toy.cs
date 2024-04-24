@@ -12,18 +12,19 @@
             _manufacturer = manufacturer;
             _isBatteryPowered = isBatteryPowered;
             this.Departament = Departament.Toy;
+            Counter++;
         }
 
         public int AgeRestrictions { get => _ageRestrictions; set => _ageRestrictions = value; }
         public string Manufacturer { get => _manufacturer; set => _manufacturer = value; }
         public bool IsBanttryPowered { get => _isBatteryPowered; set => _isBatteryPowered = value; }
-
+        public static int Counter = 0;
         public override double GetDiscountPrice(double discountPercentage)
         {
 
             if(_isBatteryPowered == true)
             {// дополнительнская скидка на все товары, которые работают от батареек
-                discountPercentage = (discountPercentage + 40) > 100 ? 90: discountPercentage ;
+                discountPercentage = (discountPercentage + 40) > 100 ? 90: (discountPercentage + 40) ;
             }
 
 
