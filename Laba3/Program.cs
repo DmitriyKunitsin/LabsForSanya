@@ -1,4 +1,6 @@
-﻿namespace Laba3
+﻿using System;
+
+namespace Laba3
 {
     internal class Program
     {
@@ -7,7 +9,9 @@
             string name_shop = Print.GetInput("Введите название вашего магазина");
             Product.DiscountAmount = Print.GetIntInput("Введите сегодняшнию сумму скидки на все товары");
             List<Product> products = new List<Product>();
+            InitilizetedObject(products);
             string input_check = string.Empty;
+            
             while (input_check != "exit")
             {
 
@@ -79,6 +83,35 @@
             Console.WriteLine("Завершение работы прораммы...");
         }
 
+        /// <summary>Функция для автоматизированного добавления продуктов в магазин</summary>
+        /// <param name="products">The products.</param>
+        private static void InitilizetedObject(List<Product> products)
+        {
+            
+            Random random = new Random();
+            for (int i = 1; i <= 10; ++i)
+            {
+                bool isBatteryPowered = random.Next(2) == 0; // Генерируем случайное значение true или false
+                Toy toy = new Toy($"Мягкая игрушка{i}", $"Плюшевый медведь{i}", 9.99 + i, 20 + i, 0, 6, "Китай", isBatteryPowered);
+                products.Add(toy);
+                Product.IncreaseProductCount();
+            }
+
+            for(int i = 1; i <= 10; ++i)
+            {
+                Clothing cloth = new Clothing($"Майка{i}", $"Описание{i}", 5.55 + i, 4 + i, 0, "Россия", "муж");
+                products.Add(cloth);
+                Product.IncreaseProductCount();
+            }
+
+            for(int i = 1;i <= 10; ++i)
+            {
+                bool isBatteryPowered = random.Next(2) == 0; // Генерируем случайное значение true или false
+                Electronics electronics = new Electronics($"Электроинструмент{i}", $"Описание{i}", 20.99 + i, 0 + i, 0, "Тайвань", isBatteryPowered);
+                products.Add(electronics);
+                Product.IncreaseProductCount();
+            }
+        }
 
     }
 }
