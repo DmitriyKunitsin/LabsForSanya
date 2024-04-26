@@ -1,0 +1,15 @@
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\bin\Debug\net8.0\Events.exe
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\bin\Debug\net8.0\Events.deps.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\bin\Debug\net8.0\Events.runtimeconfig.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\bin\Debug\net8.0\Events.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\bin\Debug\net8.0\Events.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\obj\Debug\net8.0\Events.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\obj\Debug\net8.0\Events.AssemblyInfoInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\obj\Debug\net8.0\Events.AssemblyInfo.cs
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\obj\Debug\net8.0\Events.csproj.CoreCompileInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\obj\Debug\net8.0\Events.sourcelink.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\obj\Debug\net8.0\Events.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\obj\Debug\net8.0\refint\Events.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\obj\Debug\net8.0\Events.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\obj\Debug\net8.0\Events.genruntimeconfig.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Events\obj\Debug\net8.0\ref\Events.dll
