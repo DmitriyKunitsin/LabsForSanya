@@ -1,0 +1,15 @@
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\bin\Debug\net8.0\LessonDelegate.exe
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\bin\Debug\net8.0\LessonDelegate.deps.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\bin\Debug\net8.0\LessonDelegate.runtimeconfig.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\bin\Debug\net8.0\LessonDelegate.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\bin\Debug\net8.0\LessonDelegate.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\obj\Debug\net8.0\LessonDelegate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\obj\Debug\net8.0\LessonDelegate.AssemblyInfoInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\obj\Debug\net8.0\LessonDelegate.AssemblyInfo.cs
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\obj\Debug\net8.0\LessonDelegate.csproj.CoreCompileInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\obj\Debug\net8.0\LessonDelegate.sourcelink.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\obj\Debug\net8.0\LessonDelegate.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\obj\Debug\net8.0\refint\LessonDelegate.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\obj\Debug\net8.0\LessonDelegate.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\obj\Debug\net8.0\LessonDelegate.genruntimeconfig.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\LessonDelegate\obj\Debug\net8.0\ref\LessonDelegate.dll
