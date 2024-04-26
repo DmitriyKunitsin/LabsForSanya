@@ -1,0 +1,15 @@
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\bin\Debug\net8.0\Lambdas.exe
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\bin\Debug\net8.0\Lambdas.deps.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\bin\Debug\net8.0\Lambdas.runtimeconfig.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\bin\Debug\net8.0\Lambdas.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\bin\Debug\net8.0\Lambdas.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\obj\Debug\net8.0\Lambdas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\obj\Debug\net8.0\Lambdas.AssemblyInfoInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\obj\Debug\net8.0\Lambdas.AssemblyInfo.cs
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\obj\Debug\net8.0\Lambdas.csproj.CoreCompileInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\obj\Debug\net8.0\Lambdas.sourcelink.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\obj\Debug\net8.0\Lambdas.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\obj\Debug\net8.0\refint\Lambdas.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\obj\Debug\net8.0\Lambdas.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\obj\Debug\net8.0\Lambdas.genruntimeconfig.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Lambdas\obj\Debug\net8.0\ref\Lambdas.dll
