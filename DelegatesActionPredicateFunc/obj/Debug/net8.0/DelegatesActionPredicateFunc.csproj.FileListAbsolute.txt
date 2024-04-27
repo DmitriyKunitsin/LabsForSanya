@@ -1,0 +1,15 @@
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\bin\Debug\net8.0\DelegatesActionPredicateFunc.exe
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\bin\Debug\net8.0\DelegatesActionPredicateFunc.deps.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\bin\Debug\net8.0\DelegatesActionPredicateFunc.runtimeconfig.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\bin\Debug\net8.0\DelegatesActionPredicateFunc.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\bin\Debug\net8.0\DelegatesActionPredicateFunc.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\obj\Debug\net8.0\DelegatesActionPredicateFunc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\obj\Debug\net8.0\DelegatesActionPredicateFunc.AssemblyInfoInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\obj\Debug\net8.0\DelegatesActionPredicateFunc.AssemblyInfo.cs
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\obj\Debug\net8.0\DelegatesActionPredicateFunc.csproj.CoreCompileInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\obj\Debug\net8.0\DelegatesActionPredicateFunc.sourcelink.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\obj\Debug\net8.0\DelegatesActionPredicateFunc.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\obj\Debug\net8.0\refint\DelegatesActionPredicateFunc.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\obj\Debug\net8.0\DelegatesActionPredicateFunc.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\obj\Debug\net8.0\DelegatesActionPredicateFunc.genruntimeconfig.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\DelegatesActionPredicateFunc\obj\Debug\net8.0\ref\DelegatesActionPredicateFunc.dll
