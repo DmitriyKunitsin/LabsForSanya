@@ -1,0 +1,15 @@
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\bin\Debug\net8.0\Closures.exe
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\bin\Debug\net8.0\Closures.deps.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\bin\Debug\net8.0\Closures.runtimeconfig.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\bin\Debug\net8.0\Closures.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\bin\Debug\net8.0\Closures.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\obj\Debug\net8.0\Closures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\obj\Debug\net8.0\Closures.AssemblyInfoInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\obj\Debug\net8.0\Closures.AssemblyInfo.cs
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\obj\Debug\net8.0\Closures.csproj.CoreCompileInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\obj\Debug\net8.0\Closures.sourcelink.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\obj\Debug\net8.0\Closures.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\obj\Debug\net8.0\refint\Closures.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\obj\Debug\net8.0\Closures.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\obj\Debug\net8.0\Closures.genruntimeconfig.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Closures\obj\Debug\net8.0\ref\Closures.dll
