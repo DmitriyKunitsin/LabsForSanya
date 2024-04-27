@@ -1,0 +1,15 @@
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\bin\Debug\net8.0\CovarianceAndContravarianceOfDelegates.exe
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\bin\Debug\net8.0\CovarianceAndContravarianceOfDelegates.deps.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\bin\Debug\net8.0\CovarianceAndContravarianceOfDelegates.runtimeconfig.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\bin\Debug\net8.0\CovarianceAndContravarianceOfDelegates.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\bin\Debug\net8.0\CovarianceAndContravarianceOfDelegates.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\obj\Debug\net8.0\CovarianceAndContravarianceOfDelegates.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\obj\Debug\net8.0\CovarianceAndContravarianceOfDelegates.AssemblyInfoInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\obj\Debug\net8.0\CovarianceAndContravarianceOfDelegates.AssemblyInfo.cs
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\obj\Debug\net8.0\CovarianceAndContravarianceOfDelegates.csproj.CoreCompileInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\obj\Debug\net8.0\CovarianceAndContravarianceOfDelegates.sourcelink.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\obj\Debug\net8.0\CovarianceAndContravarianceOfDelegates.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\obj\Debug\net8.0\refint\CovarianceAndContravarianceOfDelegates.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\obj\Debug\net8.0\CovarianceAndContravarianceOfDelegates.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\obj\Debug\net8.0\CovarianceAndContravarianceOfDelegates.genruntimeconfig.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\CovarianceAndContravarianceOfDelegates\obj\Debug\net8.0\ref\CovarianceAndContravarianceOfDelegates.dll
