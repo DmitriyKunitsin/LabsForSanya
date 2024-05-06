@@ -1,0 +1,15 @@
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\bin\Debug\net8.0\BassicC#.exe
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\bin\Debug\net8.0\BassicC#.deps.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\bin\Debug\net8.0\BassicC#.runtimeconfig.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\bin\Debug\net8.0\BassicC#.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\bin\Debug\net8.0\BassicC#.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\obj\Debug\net8.0\BassicC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\obj\Debug\net8.0\BassicC#.AssemblyInfoInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\obj\Debug\net8.0\BassicC#.AssemblyInfo.cs
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\obj\Debug\net8.0\BassicC#.csproj.CoreCompileInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\obj\Debug\net8.0\BassicC#.sourcelink.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\obj\Debug\net8.0\BassicC#.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\obj\Debug\net8.0\refint\BassicC#.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\obj\Debug\net8.0\BassicC#.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\obj\Debug\net8.0\BassicC#.genruntimeconfig.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\BassicC#\obj\Debug\net8.0\ref\BassicC#.dll
