@@ -1,0 +1,15 @@
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\bin\Debug\net8.0\ClassStructNamespace.exe
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\bin\Debug\net8.0\ClassStructNamespace.deps.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\bin\Debug\net8.0\ClassStructNamespace.runtimeconfig.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\bin\Debug\net8.0\ClassStructNamespace.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\bin\Debug\net8.0\ClassStructNamespace.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\obj\Debug\net8.0\ClassStructNamespace.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\obj\Debug\net8.0\ClassStructNamespace.AssemblyInfoInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\obj\Debug\net8.0\ClassStructNamespace.AssemblyInfo.cs
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\obj\Debug\net8.0\ClassStructNamespace.csproj.CoreCompileInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\obj\Debug\net8.0\ClassStructNamespace.sourcelink.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\obj\Debug\net8.0\ClassStructNamespace.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\obj\Debug\net8.0\refint\ClassStructNamespace.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\obj\Debug\net8.0\ClassStructNamespace.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\obj\Debug\net8.0\ClassStructNamespace.genruntimeconfig.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\ClassStructNamespace\obj\Debug\net8.0\ref\ClassStructNamespace.dll

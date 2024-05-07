@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9C9F08-DB5A-4CB5-AE6E-58A46A1986C7}|ClassStructNamespace.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\classstructnamespace\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E9C9F08-DB5A-4CB5-AE6E-58A46A1986C7}|ClassStructNamespace.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9C9F08-DB5A-4CB5-AE6E-58A46A1986C7}|ClassStructNamespace.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\classstructnamespace\\mychechknulable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E9C9F08-DB5A-4CB5-AE6E-58A46A1986C7}|ClassStructNamespace.csproj|solutionrelative:mychechknulable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9C9F08-DB5A-4CB5-AE6E-58A46A1986C7}|ClassStructNamespace.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\classstructnamespace\\mynullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E9C9F08-DB5A-4CB5-AE6E-58A46A1986C7}|ClassStructNamespace.csproj|solutionrelative:mynullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9C9F08-DB5A-4CB5-AE6E-58A46A1986C7}|ClassStructNamespace.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\classstructnamespace\\human.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E9C9F08-DB5A-4CB5-AE6E-58A46A1986C7}|ClassStructNamespace.csproj|solutionrelative:human.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9C9F08-DB5A-4CB5-AE6E-58A46A1986C7}|ClassStructNamespace.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\classstructnamespace\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E9C9F08-DB5A-4CB5-AE6E-58A46A1986C7}|ClassStructNamespace.csproj|solutionrelative:person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E9C9F08-DB5A-4CB5-AE6E-58A46A1986C7}|ClassStructNamespace.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\classstructnamespace\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E9C9F08-DB5A-4CB5-AE6E-58A46A1986C7}|ClassStructNamespace.csproj|solutionrelative:company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyChechkNulable.cs",
+              "DocumentMoniker": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\MyChechkNulable.cs",
+              "RelativeDocumentMoniker": "MyChechkNulable.cs",
+              "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\MyChechkNulable.cs",
+              "RelativeToolTip": "MyChechkNulable.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAIwDoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T07:53:09.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyNullable.cs",
+              "DocumentMoniker": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\MyNullable.cs",
+              "RelativeDocumentMoniker": "MyNullable.cs",
+              "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\MyNullable.cs",
+              "RelativeToolTip": "MyNullable.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAAEcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T07:32:22.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Human.cs",
+              "DocumentMoniker": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\Human.cs",
+              "RelativeDocumentMoniker": "Human.cs",
+              "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\Human.cs",
+              "RelativeToolTip": "Human.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAiwEwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T04:27:08.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Company.cs",
+              "DocumentMoniker": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\Company.cs",
+              "RelativeDocumentMoniker": "Company.cs",
+              "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\Company.cs",
+              "RelativeToolTip": "Company.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T09:14:31.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\Person.cs",
+              "RelativeDocumentMoniker": "Person.cs",
+              "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\Person.cs",
+              "RelativeToolTip": "Person.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAswDEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T08:30:34.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\ClassStructNamespace\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAQwG8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T08:22:06.241Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
