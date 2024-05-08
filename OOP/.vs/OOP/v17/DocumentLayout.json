@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{986EFB0A-AB84-41E2-9498-9B494C5C22F0}|OOP.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\oop\\inheritance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986EFB0A-AB84-41E2-9498-9B494C5C22F0}|OOP.csproj|solutionrelative:inheritance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{986EFB0A-AB84-41E2-9498-9B494C5C22F0}|OOP.csproj|C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986EFB0A-AB84-41E2-9498-9B494C5C22F0}|OOP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{986EFB0A-AB84-41E2-9498-9B494C5C22F0}|OOP.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{986EFB0A-AB84-41E2-9498-9B494C5C22F0}|OOP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{986EFB0A-AB84-41E2-9498-9B494C5C22F0}|OOP.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\oop\\generic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986EFB0A-AB84-41E2-9498-9B494C5C22F0}|OOP.csproj|solutionrelative:generic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986EFB0A-AB84-41E2-9498-9B494C5C22F0}|OOP.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\oop\\abstract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986EFB0A-AB84-41E2-9498-9B494C5C22F0}|OOP.csproj|solutionrelative:abstract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986EFB0A-AB84-41E2-9498-9B494C5C22F0}|OOP.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\oop\\inheritance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986EFB0A-AB84-41E2-9498-9B494C5C22F0}|OOP.csproj|solutionrelative:inheritance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Generic.cs",
+              "DocumentMoniker": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\\Generic.cs",
+              "RelativeDocumentMoniker": "Generic.cs",
+              "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\\Generic.cs",
+              "RelativeToolTip": "Generic.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAiwH8AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T01:31:05.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Abstract.cs",
+              "DocumentMoniker": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\\Abstract.cs",
+              "RelativeDocumentMoniker": "Abstract.cs",
+              "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\\Abstract.cs",
+              "RelativeToolTip": "Abstract.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T14:41:13.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Inheritance.cs",
               "DocumentMoniker": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\\Inheritance.cs",
               "RelativeDocumentMoniker": "Inheritance.cs",
               "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\\Inheritance.cs",
               "RelativeToolTip": "Inheritance.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAA/wC0AAAAfAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAswC0AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-07T08:21:01.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAwwCIAAAAMAAAA",
+              "ViewState": "AQIAALcAAAAAAAAAAAAAAL4AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-07T08:19:14.855Z",
               "EditorCaption": ""
