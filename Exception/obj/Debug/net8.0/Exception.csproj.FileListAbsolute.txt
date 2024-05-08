@@ -1,0 +1,15 @@
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\bin\Debug\net8.0\Exception.exe
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\bin\Debug\net8.0\Exception.deps.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\bin\Debug\net8.0\Exception.runtimeconfig.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\bin\Debug\net8.0\Exception.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\bin\Debug\net8.0\Exception.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\obj\Debug\net8.0\Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\obj\Debug\net8.0\Exception.AssemblyInfoInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\obj\Debug\net8.0\Exception.AssemblyInfo.cs
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\obj\Debug\net8.0\Exception.csproj.CoreCompileInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\obj\Debug\net8.0\Exception.sourcelink.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\obj\Debug\net8.0\Exception.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\obj\Debug\net8.0\refint\Exception.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\obj\Debug\net8.0\Exception.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\obj\Debug\net8.0\Exception.genruntimeconfig.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Exception\obj\Debug\net8.0\ref\Exception.dll
