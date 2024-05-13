@@ -45,6 +45,33 @@
                 Console.WriteLine(false); // false
             }
 
+            Console.WriteLine("\nПерегрузка операций преобразования типов\n");
+
+            Console.WriteLine("\nexplicit and implicit \n");
+            CounterSecond counterSecond = new CounterSecond { Second = 60 };
+            //explicit - явное преобразование
+            int secondNow = (int)counterSecond;
+            Console.WriteLine(secondNow); // 60
+            // implicit - неявное преобразование
+            CounterSecond counterSecond2 = secondNow;
+            Console.WriteLine(counterSecond2.Second); // 60
+
+            CounterSecond second = new CounterSecond { Second = 65932 };
+
+            Timer timer = second;
+            Console.WriteLine($"{timer.Hours}:{timer.Minutes}:{timer.Seconds}");//18:18:52
+
+            CounterSecond second2 = (CounterSecond)timer;
+            Console.WriteLine(second2.Second);//65932
+
+
+            Console.WriteLine("\nИндексаторы\n");
+
+
+
+
+
+
 
         }
     }
