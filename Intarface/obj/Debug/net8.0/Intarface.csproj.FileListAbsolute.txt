@@ -1,0 +1,15 @@
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\bin\Debug\net8.0\Intarface.exe
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\bin\Debug\net8.0\Intarface.deps.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\bin\Debug\net8.0\Intarface.runtimeconfig.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\bin\Debug\net8.0\Intarface.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\bin\Debug\net8.0\Intarface.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\obj\Debug\net8.0\Intarface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\obj\Debug\net8.0\Intarface.AssemblyInfoInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\obj\Debug\net8.0\Intarface.AssemblyInfo.cs
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\obj\Debug\net8.0\Intarface.csproj.CoreCompileInputs.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\obj\Debug\net8.0\Intarface.sourcelink.json
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\obj\Debug\net8.0\Intarface.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\obj\Debug\net8.0\refint\Intarface.dll
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\obj\Debug\net8.0\Intarface.pdb
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\obj\Debug\net8.0\Intarface.genruntimeconfig.cache
+C:\Users\ap_lo\OneDrive\Рабочий стол\СаняЛабы\Intarface\obj\Debug\net8.0\ref\Intarface.dll
