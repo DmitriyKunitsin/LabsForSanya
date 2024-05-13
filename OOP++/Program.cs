@@ -91,7 +91,25 @@ namespace OOP__
             // получаем значение
             Console.WriteLine(tom["name"]); // Tom
 
+            Console.WriteLine("\nСсылка как результат функции\n");
 
+            int[] numbers = { 1, 2, 3, 4, 5, 6 };
+            ref int numberRef = ref Find(4, numbers);
+            numberRef = 34;
+            Console.WriteLine(numbers[3]); // 34
+
+
+            static ref int Find(int number, int[] numbers)
+            {
+                for (int i = 0; i < numbers.Length; ++i)
+                {
+                    if (numbers[i] == number)
+                    {
+                        return ref numbers[i];
+                    }
+                }
+                throw new IndexOutOfRangeException("число не найдено");
+            }
 
 
 
