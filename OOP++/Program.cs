@@ -1,11 +1,13 @@
-﻿namespace OOP__
+﻿using static OOP__.Company;
+
+namespace OOP__
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Counter counter1 = new Counter { Value = 45};
-            Counter counter2 = new Counter { Value = 95};
+            Counter counter1 = new Counter { Value = 45 };
+            Counter counter2 = new Counter { Value = 95 };
             bool result = counter1 > counter2;
             Console.WriteLine(result);//false
 
@@ -28,17 +30,18 @@
 
             Counter BoolConter = new Counter { Value = 0 };
 
-            if(!BoolConter) // BoolConter == 0
+            if (!BoolConter) // BoolConter == 0
             {
                 Console.WriteLine(true); // true
-            } else
+            }
+            else
             {
                 Console.WriteLine(false);
             }
 
-            if(BoolConter)
+            if (BoolConter)
             {
-                Console.WriteLine(true); 
+                Console.WriteLine(true);
             }
             else
             {
@@ -67,7 +70,26 @@
 
             Console.WriteLine("\nИндексаторы\n");
 
+            var microsoft = new Company(new[]
+            {
+                new Person("Tom"), new Person("Dima"), new Person("Serega"), new Person("Oleg")
+            });// получаем объект из индексатора
 
+            Person firsPerson = microsoft[0];
+            Console.WriteLine(firsPerson.Name); // Tom
+
+            // переустанавливаем объект
+            microsoft[0] = new Person("Vadim");
+            Console.WriteLine(microsoft[0].Name); // Vadim
+
+            User tom = new User();
+            // устанавливаем значения
+            tom["name"] = "Tomchik";
+            tom["email"] = "tom@gmail.ru";
+            tom["phone"] = "+1234556767";
+
+            // получаем значение
+            Console.WriteLine(tom["name"]); // Tom
 
 
 

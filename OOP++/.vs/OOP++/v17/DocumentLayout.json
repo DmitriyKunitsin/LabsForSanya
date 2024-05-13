@@ -5,14 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9EE19A20-2E97-434E-A851-724E30424A52}|OOP\u002B\u002B.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\oop\u002B\u002B\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EE19A20-2E97-434E-A851-724E30424A52}|OOP\u002B\u002B.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EE19A20-2E97-434E-A851-724E30424A52}|OOP\u002B\u002B.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\oop\u002B\u002B\\countersecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EE19A20-2E97-434E-A851-724E30424A52}|OOP\u002B\u002B.csproj|solutionrelative:countersecond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EE19A20-2E97-434E-A851-724E30424A52}|OOP\u002B\u002B.csproj|c:\\users\\ap_lo\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\u0430\u043D\u044F\u043B\u0430\u0431\u044B\\oop\u002B\u002B\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EE19A20-2E97-434E-A851-724E30424A52}|OOP\u002B\u002B.csproj|solutionrelative:timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Timer.cs",
-              "DocumentMoniker": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\u002B\u002B\\Timer.cs",
-              "RelativeDocumentMoniker": "Timer.cs",
-              "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\u002B\u002B\\Timer.cs",
-              "RelativeToolTip": "Timer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T07:21:18.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CounterSecond.cs",
-              "DocumentMoniker": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\u002B\u002B\\CounterSecond.cs",
-              "RelativeDocumentMoniker": "CounterSecond.cs",
-              "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\u002B\u002B\\CounterSecond.cs",
-              "RelativeToolTip": "CounterSecond.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAIwBwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T07:13:52.825Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -58,7 +24,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ap_lo\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0421\u0430\u043D\u044F\u041B\u0430\u0431\u044B\\OOP\u002B\u002B\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAYwEYAAAAAAAAA",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAYwFYAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T06:35:43.74Z",
               "EditorCaption": ""
