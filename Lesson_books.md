@@ -1050,4 +1050,104 @@ stack.Push("first");
 stack.Push("second");
 Console.WriteLine(stack.Pop()); // Вывод: second
 ```
+# Реализация интерфейсов IEnumerable и IEnumerator
+```
+using System;
+using System.Collections;
 
+namespace YIELD
+{
+    // Реализация интерфейсов IEnumerable и IEnumerator
+    class MyBytes : IEnumerable, IEnumerator
+    {
+        byte[] bytes = { 1, 3, 5, 7 };
+        int index = -1;
+
+        public IEnumerator GetEnumerator()
+        {
+            return this;
+        }
+
+        public bool MoveNext()
+        {
+            if (index < bytes.Length - 1) {
+                Reset();
+                return false;
+            }
+            index++;
+            return true;
+        }
+
+        public void Reset()
+        {
+            index = -1;
+        }
+        public object Current
+        {
+            get
+            {
+                return bytes[index];
+            }
+        }
+    }
+    class Programm
+    {
+        static void Main(string[] args)
+        {
+            MyBytes mb = new MyBytes();
+            foreach(int j in mb)
+                Console.Write(j + " ");
+        }
+    }
+}
+```
+
+# Итераторы. Ключевое слово yield
+Синтаксис итератора следующий:
+```
+public  IEnumerable  имя_итератора(список_параметров)   {
+// ...
+yield return obj;
+}
+```
+- **имя_итератора** - конкретное имя метода 
+- **список_параметров** - параметры, передаваемые методу итератора
+- **obj** - следующий объект, возвращаемый итератором 
+
+**Пример итератора**
+```
+class MyClass
+{
+    int limit = 0;
+    public MyClass(int limit) { this.limit = limit; }
+    
+    public IEnumerable<int> CountFrom(int start)
+    {
+        for (int i = start; i <= limit; i++)
+        {
+            yield return i;
+        }
+    }
+}
+```
+- Этот метод принимает параметр start и возвращает последовательность целых чисел от start до limit.
+- Используется ключевое слово yield return, которое позволяет возвращать значения по одному, не сохраняя все значения в памяти сразу. Это делает метод "ленивым" — значения генерируются по мере необходимости.
+**Зачем итераторы?**
+- Метод CountFrom позволяет легко итерироваться по диапазону чисел. Вы можете использовать его в цикле foreach, чтобы получить каждое число по отдельности.
+-  Поскольку значения возвращаются по одному, вы не загружаете в память все числа сразу. Это особенно полезно, если диапазон чисел большой.
+-  Использование итераторов делает код более читаемым и удобным для использования. Вам не нужно вручную управлять индексами или хранить все значения в списке.
+**Пример использования**
+```
+class Program
+{
+    static void Main(string[] args)
+    {
+        MyClass myClass = new MyClass(10); // Создаем объект с limit = 10
+        foreach (int number in myClass.CountFrom(5)) // Начинаем с 5
+        {
+            Console.WriteLine(number); // Выводим числа от 5 до 10
+        }
+    }
+}
+
+```
