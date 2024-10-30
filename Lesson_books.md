@@ -1273,3 +1273,285 @@ namespace MyNamespaces
     }
 }
 ```
+
+# Многопоточное и паралельное программирование
+
+# Парарлельные колекции
+В .NET есть несколько классов, которые обеспечивают потокобезопасные коллекции. Эти классы находятся в пространстве имен System.Collections.Concurrent. Ниже приведена таблица, описывающая основные классы и их функциональность.
+
+## Параллельные коллекции
+
+| Класс                          | Описание                                                                                                                                                              |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ConcurrentQueue<T>          | Параллельная версия очереди. Методы: Enqueue(), TryDequeue(), TryPeek(). Методы с префиксом Try предназначены для работы в многопоточной среде.             |
+| ConcurrentStack<T>          | Параллельная версия стека. Методы: Push(), PushRange(), TryPeek(), TryPop(), TryPopRange(). Использует связный список для хранения элементов.             |
+| ConcurrentBag<T>            | Не определяет порядок добавления или извлечения элементов. Методы: Add(), TryPeek(), TryTake(). Стремится избегать блокировок, используя внутренние массивы.    |
+| ConcurrentDictionary<TKey,TValue> | Параллельная версия словаря. Методы: TryAdd(), TryGetValue(), TryRemove(), TryUpdate(). Позволяет неблокирующий доступ к элементам.                          |
+| BlockingCollection<T>        | Коллекция, которая осуществляет блокировку и ожидает возможности для добавления или извлечения элемента. Методы: Add(), Take(). Блокирует поток при необходимости. |
+
+### ConcurrentQueue<T>
+```
+var queue = new ConcurrentQueue<int>();
+queue.Enqueue(1);
+queue.Enqueue(2);
+
+if (queue.TryDequeue(out int result))
+{
+    Console.WriteLine(result); // Вывод: 1
+}
+```
+### ConcurrentStack<T>
+```
+var stack = new ConcurrentStack<int>();
+stack.Push(1);
+stack.Push(2);
+
+if (stack.TryPop(out int result))
+{
+    Console.WriteLine(result); // Вывод: 2
+}
+```
+### ConcurrentBag<T>
+```
+var bag = new ConcurrentBag<int>();
+bag.Add(1);
+bag.Add(2);
+
+if (bag.TryTake(out int result))
+{
+    Console.WriteLine(result); // Вывод: 1 или 2 (порядок не определен)
+}
+```
+### ConcurrentDictionary<TKey,TValue>
+```
+var dictionary = new ConcurrentDictionary<int, string>();
+dictionary.TryAdd(1, "One");
+dictionary.TryAdd(2, "Two");
+
+if (dictionary.TryGetValue(1, out string value))
+{
+    Console.WriteLine(value); // Вывод: One
+}
+```
+
+### BlockingCollection<T>
+```
+var blockingCollection = new BlockingCollection<int>();
+Task.Run(() =>
+{
+    blockingCollection.Add(1);
+    blockingCollection.Add(2);
+});
+
+int item = blockingCollection.Take(); // Блокируется, пока не будет добавлен элемент
+Console.WriteLine(item); // Вывод: 1
+```
+В данном примере демонстрируется использование класса BlockingCollection для реализации модели Producer-Consumer. Программа создает поток для производителя и поток для потребителя, которые взаимодействуют через блокирующую коллекцию.
+
+- System: Основное пространство имен, содержащее базовые классы.
+- System.Collections.Concurrent: Содержит классы, обеспечивающие потокобезопасные коллекции.
+- System.Threading: Содержит классы для работы с потоками.
+- System.Threading.Tasks: Содержит классы для работы с асинхронным программированием.
+```
+using System;
+using System.Collections.Concurrent;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace BlockingCollection
+{
+    class Programm
+    {
+        static BlockingCollection<int> bc;
+
+        // Метод producer добавляет 5 элементов (от 0 до 4) в коллекцию bc.
+        static void producer()
+        {
+            for (int i = 0; i < 5; i++)
+            { 
+                bc.Add(i);
+                Console.WriteLine("Producer " + i);
+            }
+            bc.CompleteAdding();
+            // После добавления всех элементов вызывается метод CompleteAdding(), чтобы указать, что добавление завершено.
+        }
+        // Метод consumer извлекает элементы из коллекции, пока она не будет завершена.
+        static void consumer()
+        {
+            int i;
+            while (!bc.IsCompleted)
+            { // Используется метод TryTake, который пытается взять элемент из коллекции. Если элемент успешно извлечен, он выводится на консоль.
+                if (bc.TryTake(out i))
+                    Console.WriteLine("Consumer: " + i);
+            }
+        }
+        static void Main()
+        { // создается экземпляр BlockingCollection с максимальным размером 4.
+            bc = new BlockingCollection<int>(4);
+
+            // Создаются задачи (Task) для методов producer и consumer.
+            Task ProducerTask = new Task(producer);
+            Task ConsumerTask = new Task(consumer);
+
+            // Запускаются обе задачи с помощью метода Start().
+            ProducerTask.Start();
+            ConsumerTask.Start();
+
+            try
+            {   // Используется Task.WaitAll() для ожидания завершения обеих задач.
+                Task.WaitAll(ConsumerTask, ProducerTask);
+            } catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            } finally
+            {   // В блоке finally освобождаются ресурсы, вызвав методы Dispose() для задач и коллекции.
+                ConsumerTask.Dispose();
+                ProducerTask.Dispose();
+                bc.Dispose();
+            }
+            Console.ReadLine();
+        }
+    }
+}
+```
+В ходе выполнения программы в консоль будут выведены сообщения от производителя и потребителя, показывающие процесс добавления и извлечения элементов из блокирующей коллекции.
+
+- Таким образом, программа демонстрирует простую реализацию паттерна Producer-Consumer с использованием класса BlockingCollection.
+
+
+# Класс Task
+
+Класс Task является основным элементом в **Task Parallel Library (TPL)** и представляет собой абстракцию для асинхронных операций. В отличие от класса Thread, который инкапсулирует поток исполнения, класс Task предоставляет более высокоуровневый подход к параллельному 
+
+### Основные отличия от Thread
+
+- **Task**: абстракция для асинхронной операции.
+- **Thread**: инкапсулирует поток исполнения.
+- Задачи могут разделять один и тот же поток благодаря планировщику задач, работающему с пулом потоков.
+
+### Конструктор Task
+Для создания задачи используется следующий конструктор: ```public Task(Action действие)```
+
+Где действие — это точка входа в код, представляющий задачу.
+
+### Делегат Action
+Форма делегата Action:
+
+### Пример использования
+```
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace ConsoleApp
+{
+    class Programm
+    {
+        // Метод, который будет запущен в качестве задачи
+        static void TaskAction()
+        {
+            Console.WriteLine("TaskActions started, task {0}", Task.CurrentId);
+
+            for (int count = 0; count < 5; count++)
+            {
+                // Ожидание 1 секунда (1000 мс)
+                Thread.Sleep(1000);
+                Console.WriteLine("Task {0}, Count: {1}", Task.CurrentId , count);
+            }
+        }
+
+        static void Main()
+        {
+            Console.WriteLine("Main thread started");
+
+            Task task1 = new Task(TaskAction);
+            Task task2 = new Task(TaskAction);
+
+            // Запуск задач
+            task1.Start();
+            task2.Start();
+
+            for (int i = 0; i < 20; i++)
+            {
+                Console.Write(".");
+                Thread.Sleep(500);
+            }
+
+            Console.WriteLine("Main thread shutdown");
+            Console.ReadLine();
+        }
+    }
+}
+```
+- В методе TaskAction выполняется цикл, который выводит номер задачи и счетчик.
+- В методе Main создаются и запускаются две задачи.
+- Основной поток выводит точки в течение 10 секунд, пока задачи выполняются.
+
+# Ожидание задачи
+```
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace ConsoleApp
+{
+    class Programm
+    {
+        // Метод, который будет запущен в качестве задачи
+        static void TaskAction()
+        {
+            Console.WriteLine("TaskActions started, task {0}", Task.CurrentId);
+
+            for (int count = 0; count < 5; count++)
+            {
+                // Ожидание 1 секунда (1000 мс)
+                Thread.Sleep(1000);
+                Console.WriteLine("Task {0}, Count: {1}", Task.CurrentId, count);
+            }
+        }
+
+        static void Main()
+        {
+            Console.WriteLine("Main thread started");
+
+            Task task1 = new Task(TaskAction);
+            Task task2 = new Task(TaskAction);
+            // Запуск задач
+            task1.Start();
+            task2.Start();
+
+            Console.WriteLine("Waiting...");
+            // Ожидание завершения задач
+            task1.Wait();
+            task2.Wait();
+
+            Console.WriteLine("Main thread shutdown");
+            Console.ReadLine();
+        }
+    }
+}
+```
+## Описание кода
+
+1. **Метод TaskAction**:
+   - Запускается в качестве задачи.
+   - Выводит идентификатор задачи и выполняет цикл с задержкой в 1 секунду.
+
+2. **Метод Main**:
+   - Создает и запускает две задачи (task1 и task2).
+   - Использует метод Wait() для ожидания завершения обеих задач.
+   - После завершения задач выводит сообщение о завершении основного потока.
+
+## Проблемы с использованием Thread.Sleep()
+- Использование Thread.Sleep() для ожидания завершения задач может привести к ошибкам:
+  - Неправильная задержка может привести к преждевременному завершению основного потока.
+  - Невозможно точно предсказать время выполнения задач.
+
+## Преимущества метода Wait()
+- Метод Wait() обеспечивает надежное ожидание завершения задач.
+- При вызове Wait() могут возникнуть исключения:
+  - ObjectDisposedException: если задача была освобождена.
+  - AggregateException: если задача завершилась с ошибкой или была отменена.
+
+## Заключение
+Использование класса Task и метода Wait() позволяет более эффективно управлять асинхронными операциями и избегать проблем, связанных с преждевременным завершением основного потока.
