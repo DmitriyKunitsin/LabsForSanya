@@ -1555,3 +1555,157 @@ namespace ConsoleApp
 
 ## Заключение
 Использование класса Task и метода Wait() позволяет более эффективно управлять асинхронными операциями и избегать проблем, связанных с преждевременным завершением основного потока.
+
+# Класс TaskFactory
+
+Класс TaskFactory позволяет создавать и сразу запускать задачи, упрощая процесс работы с асинхронными операциями. 
+
+### Создание и запуск задач
+Вместо того чтобы сначала создавать задачу, а затем запускать её, мы можем использовать TaskFactory, чтобы сделать это в одном шаге.
+
+### Получение экземпляра TaskFactory
+Объект класса TaskFactory можно получить через статическое свойство Factory класса Task: ```TaskFactory tf = Task.Factory;```
+
+### Метод StartNew()
+Метод StartNew() имеет несколько перегрузок. Самая простая форма выглядит следующим образом: ```public Task StartNew(Action action)```
+
+
+### Пример использования TaskFactory
+Можно создать и запустить задачу следующим образом:
+```
+Task t1 = tf.StartNew(TaskAction);
+Task t2 = Task.Factory.StartNew(TaskAction);
+```
+
+
+```
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace ConsoleApp
+{
+    class Programm
+    {
+        // метод который будет запущен в качестве задачи
+        static void TaskAction()
+        {
+            Console.WriteLine("TaskActions started, task {0}", Task.CurrentId);
+
+            for (int count = 0; count < 5; count++)
+            {
+                // Ожидание 1 секунда (1000 мс)
+                Thread.Sleep(1000);
+
+                Console.WriteLine("Task {0}, Count: {1}", Task.CurrentId , count);
+            }
+        }
+        static void Main()
+        {
+            Console.WriteLine("Main thread started");
+
+            TaskFactory tf_1 = new TaskFactory();
+            // запуск задачи
+            Task t1 = tf_1.StartNew(TaskAction);
+            // или так сразу
+            Task t2 = Task.Factory.StartNew(TaskAction);
+
+            Console.WriteLine("Waiting...");
+            
+            t1.Wait();
+            t2.Wait();
+
+            Console.WriteLine("Main threead shutdown");
+            Console.ReadLine();
+        }
+    }
+}
+```
+# Ожидание задачи 
+
+## Введение
+Задача в C# может возвращать значение, что удобно для организации параллельных вычислений. Это позволяет вычислять результат и возвращать его в основной поток, блокируя вызывающий процесс до получения результата.
+
+## Использование Task<TResult>
+Чтобы вернуть результат из задачи, необходимо использовать обобщенную форму Task<TResult> класса Task. 
+
+### Конструкторы Task<TResult>
+Вот два основных конструктора:
+
+1. **Без аргументов:** : ```public Task(Func<TResult> функция)```
+
+2. **С аргументом:** : ```public Task(Func<Object, TResult> функция, Object состояние)```
+   
+### Пример использования Task<TResult>
+```
+using System;
+using System.Threading.Tasks;
+
+class Program
+{
+    static void Main()
+    {
+        // Создание задачи, возвращающей значение
+        Task<int> task = new Task<int>(() => 
+        {
+            // Выполнение вычислений
+            int result = 0;
+            for (int i = 1; i <= 5; i++)
+            {
+                result += i; // Суммируем числа от 1 до 5
+            }
+            return result;
+        });
+
+        // Запуск задачи
+        task.Start();
+
+        // Ожидание завершения и получение результата
+        int finalResult = task.Result; // Блокирует до завершения задачи
+
+        Console.WriteLine($"Результат: {finalResult}"); // Вывод: Результат: 15
+    }
+}
+```
+
+## Использование TaskFactory<TResult>
+Также можно использовать класс TaskFactory<TResult> для создания задач с возвратом значения.
+
+### Методы StartNew()
+Вот два метода, которые поддерживают возврат результата:
+
+1. **Без аргументов:** : ```public Task<TResult> StartNew(Func<TResult> функция)```
+
+2. **С аргументом:** : ```public Task<TResult> StartNew(Func<Object, TResult> функция, Object состояние)```
+
+
+### Пример использования TaskFactory<TResult>
+```
+using System;
+using System.Threading.Tasks;
+
+class Program
+{
+    static void Main()
+    {
+        TaskFactory<int> factory = new TaskFactory<int>();
+
+        // Создание и запуск задачи с использованием TaskFactory
+        Task<int> task = factory.StartNew(() =>
+        {
+            int result = 1;
+            for (int i = 1; i <= 5; i++)
+            {
+                result *= i; // Вычисляем факториал 5
+            }
+            return result;
+        });
+
+        // Получение результата
+        int factorialResult = task.Result; // Блокирует до завершения задачи
+
+        Console.WriteLine($"Факториал 5: {factorialResult}"); // Вывод: Факториал 5: 120
+    }
+}
+```
+   
