@@ -1151,3 +1151,125 @@ class Program
 }
 
 ```
+
+# Пространство имён 
+Пространство имён (namespace) — это способ организации кода в C#. Оно позволяет группировать классы, интерфейсы, структуры и другие элементы, чтобы избежать конфликтов имен и улучшить читаемость кода.
+
+Зачем нужны пространства имён?
+
+1. Организация кода: Позволяют структурировать проект, разделяя его на логические группы.
+
+2. Избежание конфликтов: Позволяют использовать одинаковые имена для классов в разных пространствах имён.
+
+3. Упрощение использования: Упрощают доступ к классам и методам при помощи директив using.
+
+### Пример использования пространств имён
+Определение пространств имён
+```
+namespace MyPets
+{
+    class Cat
+    {
+        public string Name;
+        public byte Age;
+        public byte Weight;
+    }
+
+    class Dog
+    {
+        public string Name;
+        public byte Age;
+        public byte Weight;
+    }
+}
+```
+Использование пространств имён
+```
+using System;
+using MyPets; // Подключаем пространство имён MyPets
+
+namespace MyNamespaces
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello world!");
+
+            Dog dog = new Dog(); // Создаём объект класса Dog
+            dog.Name = "Test";
+            dog.Age = 245;
+            dog.Weight = 22;
+
+            Console.WriteLine("Параметры собаки: {0}, {1}, {2}", dog.Name, dog.Age, dog.Weight);
+        }
+    }
+}
+```
+
+Как это работает?
+1. Определение классов: В пространстве имён MyPets определены классы Cat и Dog, которые имеют свои поля.
+
+2. Импортирование пространства: В файле с основным кодом используется директива using MyPets;, что позволяет обращаться к классам Cat и Dog без указания полного имени пространства.
+
+3. Создание объектов: В методе Main создаётся объект Dog, и его параметры выводятся на консоль.
+
+# Вложенные пространства имён 
+### Создание вложеных пространств имён 
+```
+using System;
+
+namespace MyPets
+{
+    namespace Cats
+    {
+        namespace Siamese
+        {
+            class Cat
+            {
+                public string Name;
+                public byte Age;
+                public byte Weight;
+
+            }
+        }
+    }
+    namespace Dogs
+    {
+        class Dog
+        {
+            public string Name;
+            public byte Age;
+            public byte Weight;
+        }
+    }
+}
+```
+### Использование вложеных пространств имён 
+```
+using MyPets.Cats.Siamese;
+using MyPets.Dogs;
+
+namespace MyNamespaces
+{
+    class Programm
+    {
+        static void Main(string[] args)
+        {
+            Cat cat = new Cat();
+            cat.Name = "Cat";
+            cat.Age = 44;
+            cat.Weight = 152;
+
+            Console.WriteLine("Paramets cat : {0} , {1} , {2}", cat.Name, cat.Age, cat.Weight);
+            Dog dog = new Dog();
+            dog.Name = "Test";
+            dog.Age = 245;
+            dog.Weight = 22;
+            Console.WriteLine("Paramets dogs : {0} , {1} , {2}", dog.Name, dog.Age, dog.Weight);
+        
+        
+        }
+    }
+}
+```
